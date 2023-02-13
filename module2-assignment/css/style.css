@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    font-size: 125%;
+}
+h1.title{
+    text-align: center;
+}
+div.tile-container{
+    padding:5px;
+}
+div.tile{
+    border: 3px solid black; /* Note:This margin-width is used for tile-title to make it aligned*/
+    padding: 25px 5px 0px 5px;
+    position: relative;
+    background-color: grey;
+}
+div.tile-title{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: 3px solid black;
+    padding: 2px 25px 2px 25px;
+    margin: -3px; 
+    font-size: 175%;
+}
+.coral-box{
+    background-color: coral;
+}
+.purple-box{
+    background-color: purple;
+    color: white;
+}
+.darkgreen-box{
+    background-color:darkgreen;
+    color:white;    
+}
+@media (min-width:992px){
+    .col-lg-4{
+        float: left;
+        width:33.33%;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .col-md-6, .col-md-12{
+        float: left;
+    }
+    .col-md-6{
+        width: 50%;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+}
+
+@media (max-width:767px){
+    .col-sm-12{
+        float: left;
+        width: 100%;
+    }
+}   
